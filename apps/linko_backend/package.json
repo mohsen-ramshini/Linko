@@ -1,0 +1,17 @@
+{
+  "name": "linko_backend",
+  "version": "1.0.0",
+  "description": "social medial",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "ramesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.14"
+  }
+}
