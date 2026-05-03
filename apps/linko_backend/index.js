@@ -8,13 +8,17 @@ const userRoutes = require("./routes/userRoutes");
 
 dotenv.config();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-const app = express(morgan("dev"));
+const app = express();
+
+app.use(morgan("dev"));
 
 app.use(express.json());
 
 connectDB();
+
+app.use("/api/v1/users", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
