@@ -5,7 +5,6 @@ const dotenv = require("dotenv");
 
 // IMPORT ROUTES
 const userRoutes = require("./routes/userRoutes");
-const userRoutes = require("./routes/userRoutes");
 const postRoutes = require("./routes/postRoutes");
 const commentRoutes = require("./routes/commentRoutes");
 const followRoutes = require("./routes/followRoutes");
