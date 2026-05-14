@@ -18,9 +18,5 @@ router.patch("/:userId/avatar", userController.updateUserAvatar);
 router.patch("/:userId/cover", userController.updateUserCover);
 router.patch("/settings", userController.updateUserSettings);
 router.patch("/settings/privacy", userController.updateUserSettingsPrivacy);
-router.patch(
-  "/settings/notifications",
-  userController.updateUserSettingsNotifications,
-);
 
 module.exports = router;
